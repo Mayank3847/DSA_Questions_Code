@@ -177,7 +177,7 @@ public class LinkedList {
             curr = next;
 
         }
-        head = Prev;
+        head = Prev;       
     }
 
     // FIND AND REMOVE NTH NODE OF THE ELEMENT

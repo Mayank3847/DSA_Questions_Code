@@ -22,7 +22,7 @@ public class BitManipulation_DecimalToBinary_BinaryToDecimal {
         return sum;
     }
     public static void main(String[] args) {
-        int n =7;
+        int n =10;
         String str="1101";
         System.out.println("Decimal : "+binaryToDecimal(str));
         System.out.println("Binary: " + decimalToBinary(n));

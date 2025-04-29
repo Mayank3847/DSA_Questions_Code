@@ -9,7 +9,7 @@ public class Stack_Remove_Kth_Digits {
             while (k > 0 && !dq.isEmpty() && dq.peekLast() > ch) {
                 dq.pollLast();
                 k--;
-
+ 
             }
             dq.addLast(ch);
         }

@@ -3,32 +3,19 @@
 import java.util.*;
 
 public class LeastBeautifulBox {
-    public static int getMaximumLengthConsecutive(int arr[]) {
+    public static int getMaximumLengthConsecutive(int id[],int n) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        for (int i = 0; i < n; i++) {
+            map.put(id[i], map.getOrDefault(id[i], 0) + 1);
 
         }
-        int ans = 0;
-        List<Integer> list = new ArrayList<>(map.keySet());
-
-        for (int i = 0; i < list.size(); i++) {
-            int currBeauty = Integer.MAX_VALUE;
-            int val = list.get(i);
-            int j = i;
-            while (j < list.size() && list.get(j) == val) {
-                currBeauty = Math.min(currBeauty, map.get(list.get(j)));
-                val++;
-                j++;
-
-            }
-            ans=Math.max(ans,currBeauty);
-        }
-        return ans;
+        
+       
     }
     public static void main(String[] args) {
         int []id = {5,1,3,2,3,4,4,1,2};
-        System.out.println(getMaximumLengthConsecutive(id));
+        int n=id.length;
+        System.out.println(getMaximumLengthConsecutive(id,n));
     }
 
 }

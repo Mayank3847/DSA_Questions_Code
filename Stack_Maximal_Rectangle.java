@@ -59,3 +59,4 @@ public class Stack_Maximal_Rectangle {
     }
 
 }
+  

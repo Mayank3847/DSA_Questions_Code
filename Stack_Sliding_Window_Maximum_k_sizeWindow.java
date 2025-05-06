@@ -21,7 +21,7 @@ public class Stack_Sliding_Window_Maximum_k_sizeWindow {
     public static int getMax(int arr[], int left, int right) {
         int maxi = Integer.MIN_VALUE;
         for (int i = left; i <= right; i++) {
-            maxi = Math.max(maxi, arr[i]);
+            maxi = Math.max(maxi, arr[i]); 
             // max.add(maxi);
         }
         return maxi;

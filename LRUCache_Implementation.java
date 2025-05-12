@@ -3,7 +3,7 @@ import java.util.*;
 public class LRUCache_Implementation {
     static Node head = new Node(0, 0);
     static Node tail = new Node(0, 0);
-    static int capacity;
+    static int capacity;  
     static HashMap<Integer, Node> map = new HashMap<>();
 
     public LRUCache_Implementation(int cap) {
